@@ -210,10 +210,9 @@
     </form>
 </nav>
 <footer>
-
 </footer>
 @endsection
 
 @section('js')
-<script type="text/javascript" src="{{ URL::asset('script.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('script.js') }}"> </script>
 @endsection

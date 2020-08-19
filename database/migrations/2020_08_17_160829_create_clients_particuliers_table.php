@@ -17,14 +17,14 @@ class CreateClientsParticuliersTable extends Migration
             $table->increments('idcp');
             $table->string('nom');
             $table->string('prenom');
-            $table->string('date_de_naissance');
-            $table->string('cni');
+            $table->date('date_de_naissance');
+            $table->integer('cni');
             $table->string('adresse');
             $table->string('telephone');
             $table->string('mail');
             $table->string('profession');
-            $table->string('statut');
-            $table->string('salaire');
+            $table->integer('statut');
+            $table->integer('salaire');
         });
     }
 

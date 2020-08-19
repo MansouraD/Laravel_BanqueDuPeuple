@@ -16,10 +16,10 @@ class CreateComptesTable extends Migration
         Schema::create('comptes', function (Blueprint $table) {
             $table->increments('idc');
             $table->string('type_compte');
-            $table->float('numero_agence');
-            $table->float('numero_compte');
-            $table->float('cle_rib');
-            $table->float('frais_ouverture');
+            $table->integer('numero_agence');
+            $table->integer('numero_compte');
+            $table->integer('cle_rib');
+            $table->integer('frais_ouverture');
         });
     }
 

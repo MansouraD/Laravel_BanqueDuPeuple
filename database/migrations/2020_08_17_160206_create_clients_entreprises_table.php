@@ -18,7 +18,7 @@ class CreateClientsEntreprisesTable extends Migration
            $table->string('statut');
            $table->string('denomination');
            $table->string('ninea');
-           $table->float('adresse');
+           $table->string('adresse');
            $table->float('telephone');
            $table->string('mail');
         });

@@ -6,13 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class ClientsParticuliers extends Model
 {
-    protected $fillable = array('nom_client','prenom_client','datenaiss','cni','adresse_client','tel_client','email_client','profession','statut','salaire','employeur');
+    protected $fillable = array('ide','nom_client','prenom_client','datenaiss','cni','adresse_client','tel_client','email_client','profession','statut','salaire','employeur');
     
     public static $rules = array(
         'nom_client'=>'required | string',
         'prenom_client'=>'required | string',
-        'datenaiss'=>'required | integer',
-        'cni'=>'required | integer',
+        'datenaiss'=>'required | datetime',
+        'cni'=>'required | string',
         'adresse_client'=>'string',
         'tel_client'=>'string',
         'email_client'=>'string',
@@ -27,8 +27,8 @@ class ClientsParticuliers extends Model
        return $this->hasMany('App\Comptes');
     }
 
-    public function Employeur ()
-    {
-        return $this->belongsTo('App\Employeur');
-    }
+    // public function Employeur ()
+    // {
+    //     return $this->belongsTo('App\Employeur');
+    // }
 }

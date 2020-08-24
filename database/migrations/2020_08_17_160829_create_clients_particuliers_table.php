@@ -15,6 +15,8 @@ class CreateClientsParticuliersTable extends Migration
     {
         Schema::create('clients_particuliers', function (Blueprint $table) {
             $table->increments('idcp');
+           // $table->integer('ide')->unsigned();
+           // $table->foreign('ide')->references('ide')->on('employeurs');
             $table->string('nom');
             $table->string('prenom');
             $table->date('date_de_naissance');

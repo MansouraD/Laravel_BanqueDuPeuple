@@ -12,7 +12,7 @@ class ClientsEntreprises extends Model
         'statut_juridique'=>'required | string',
         'nom_entreprise'=>'required | string',
         'ninea'=>'required | integer',
-        'adresse_entreprise'=>'required | integer',
+        'adresse_entreprise'=>'required | string',
         'tel_entreprise'=>'string',
         'email_entreprise'=>'string',
     );

@@ -17,7 +17,7 @@ class CreateEmployeursTable extends Migration
             $table->increments('ide');
             $table->string('denomination');
             $table->string('raison_social');
-            $table->float('numero_identification');
+            $table->string('numero_identification');
             $table->string('adresse');
         });
     }

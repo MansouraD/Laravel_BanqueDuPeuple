@@ -15,6 +15,10 @@ class CreateComptesTable extends Migration
     {
         Schema::create('comptes', function (Blueprint $table) {
             $table->increments('idc');
+            $table->integer('idce')->unsigned();
+            $table->foreign('idce')->references('idce')->on('clients_entreprises');
+            $table->integer('idcp')->unsigned();
+            $table->foreign('idcp')->references('idcp')->on('clients_particuliers');
             $table->string('type_compte');
             $table->integer('numero_agence');
             $table->integer('numero_compte');

@@ -11,12 +11,12 @@ class Employeur extends Model
     public static $rules = array(
         'numero_identification'=>'required | string',
         'denomination'=>'required | string',
-        'raison_social'=>'required | integer',
+        'raison_social'=>'required | string',
         'adresse_employeur'=>'required | integer',
     );
 
-     public function Comptes ()
-    {
-       return $this->hasMany('App\ClientsParticuliers');
-    }
+    // public function Comptes ()
+    // {
+    //    return $this->hasMany('App\ClientsParticuliers');
+    // }
 }

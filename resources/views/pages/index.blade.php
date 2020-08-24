@@ -44,7 +44,7 @@
 <nav>
     <div class="erreur" name="erreur" id="erreur"></div>
 
-    <form name="formulaire" name="ouverture" id="ouverture" method="POST" action="/insererclient'">
+    <form name="formulaire" name="ouverture" id="ouverture" method="POST" action="/insererclient">
         @csrf
             <div class="pore" name="pore" id="pore">
                 <fieldset>

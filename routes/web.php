@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'all@index');
+Route::get('/', 'all@pageForm');
 
-Route::post('/insererclient','all@inserer');
+Route::post('/insererclient','all@index');
